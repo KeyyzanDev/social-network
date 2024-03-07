@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="connected.css">
+    <script src="connected.js"></script>
+    <script src="submit.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <title>Social Network</title>
+</head>
+<body>
+    <div class="topbar">
+        <p class="logo">Social Network</p>
+        <button onclick="post()">Post</button>
+        <div class="connect">
+            <a href="index.html" class="nodec"><p>Disconnect</p></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="timeline" id="timeline">
+            <div class="post">
+        <div class="post-user">
+            <div class="post-userinfo">
+                <div class="post-pp"><img src="assets/userpp.png" class="post-pp"></div>
+                <div class="post-username"><p>Username</p></div>
+            </div>
+                <div class="post-date"><p>00/00/0000</p></div>
+        </div>
+                <div class="post-post"><p>text</p></div>
+                <div class="post-actions">
+                    <div class="post-com">
+                    <img src="assets/comment.png" class="post-actions-com">
+                    <p id="pcom">0</p>
+                    </div>
+                    <div class="post-like">
+                    <img src="assets/notliked.png" class="post-actions-like" id="likebtn" onclick="like()">
+                    <p id="plike">0</p>
+                    </div>
+                    <div class="post-share">
+                    <img src="assets/share.png" class="post-actions-share">
+                    <p id="pshare">0</p>
+                    </div>
+                    <div class="post-views">
+                    <img src="assets/views.png" class="post-actions-views">
+                    <p id="pviews">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
